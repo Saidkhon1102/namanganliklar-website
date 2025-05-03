@@ -1,0 +1,48 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+// Header
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f6f6f6;
+  &__container {
+    @include flex(flex-start);
+  }
+  .site__logo {
+    margin-right: 35px;
+  }
+  &__money {
+    @include flex(flex-start, center, row, 25px);
+    color: rgba(0, 0, 0, 0.753);
+    margin-right: 247px;
+    strong {
+      color: #2959ce;
+    }
+  }
+  .search__input {
+    padding: 15px 0px 13px 41px;
+    width: 275px;
+    height: 45px;
+    border: none;
+    border-radius: 60px;
+    background: url("../assets/search.png") no-repeat left 15px center;
+    outline: none;
+    background-color: $color-white;
+  }
+  &__language {
+    width: 70px;
+    height: 36px;
+    border-radius: 39px;
+    background-color: #dce6ff;
+    @include flex();
+    margin-left: 25px;
+    margin-right: auto;
+  }
+  &__language-link {
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+    @include flex();
+    color: #a6a6a6;
+  }
+}
