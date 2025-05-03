@@ -114,6 +114,9 @@
   background-color: #eaeaea;
   border-radius: 10px;
   transition: 0.3s;
+  &:hover{
+    background-color: rgb(146, 187, 225);
+  }
 }
 .word__button:hover {
   background: orange;
